@@ -224,7 +224,7 @@ const VideoCarousel = () => {
           }
         >
           <img
-            src={isLastVideo ? replayImg : isPlaying ? pauseImg : playImg}
+            src={isLastVideo ? replayImg : !isPlaying ? playImg : pauseImg}
             alt={isLastVideo ? "replay" : isPlaying ? "pause" : "play"}
             title={isLastVideo ? "replay" : isPlaying ? "pause" : "play"}
           />
