@@ -27,9 +27,8 @@ const Highlights = () => {
         toggleActions: 'play none none none',
       },
       opacity: 1,
-      y: -50,
-      duration: 2,
-      stagger: 0.25,
+      y: -40,
+      duration: 1.5,
       ease: "power5.inOut",
     });
   
@@ -39,11 +38,12 @@ const Highlights = () => {
         start: 'top 80%',
         toggleActions: 'play none none none',
       },
+      delay: 0.4,
       opacity: 1,
-      y: -50,
-      duration: 2,
+      y: -30,
+      duration: 1.2,
       ease: "power5.inOut",
-      stagger: 0.25,
+      stagger: 0.2,
     });
   }, []);
   
@@ -55,7 +55,7 @@ const Highlights = () => {
     >
       <div className="screen-max-width">
         <div className='mb-12 w-full md:flex items-end justify-between slow'>
-          <h1 id="title" className='section-heading'>Get the highlights.</h1>
+          <h1 id="title" className='section-heading slow'>Get the highlights.</h1>
           <div className='flex flex-wrap items-end gap-5'>
             <p className='link'>
               Watch the film
