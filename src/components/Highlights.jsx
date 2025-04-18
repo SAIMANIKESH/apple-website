@@ -1,16 +1,52 @@
 import React from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 import { rightImg, watchImg } from '../utils'
 import VideoCarousel from './VideoCarousel'
 
 const Highlights = () => {
   useGSAP(() => {
-    gsap.to('.slow', { ease: "power5.inOut" })
-    gsap.to('#title', { opacity: 1, y: 0, duration: 1.5 })
-    gsap.to('.link', { opacity: 1, y: 0, duration: 1.5, stagger: 0.25 })
-  }, [])
+    gsap.to('.slow', {
+      scrollTrigger: {
+        trigger: '.slow',
+        toggleActions: "restart none none none",
+        start: "top 90%",
+        end: "bottom 60%",
+        markers: false,
+      },
+      ease: "power5.inOut",
+    });
+  
+    gsap.to('#title', {
+      scrollTrigger: {
+        trigger: '#highlights', // section trigger
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+      },
+      opacity: 1,
+      y: -50,
+      duration: 2,
+      stagger: 0.25,
+      ease: "power5.inOut",
+    });
+  
+    gsap.to('.link', {
+      scrollTrigger: {
+        trigger: '#highlights',
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+      },
+      opacity: 1,
+      y: -50,
+      duration: 2,
+      ease: "power5.inOut",
+      stagger: 0.25,
+    });
+  }, []);
+  
 
   return (
     <section 
