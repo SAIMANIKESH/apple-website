@@ -1,11 +1,11 @@
-import React from 'react'
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
+import React from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
-import { rightImg, watchImg } from '../utils'
-import VideoCarousel from './VideoCarousel'
+import { rightImg, watchImg } from '../utils';
+import VideoCarousel from './VideoCarousel';
 
 const Highlights = () => {
   useGSAP(() => {
@@ -24,7 +24,7 @@ const Highlights = () => {
       scrollTrigger: {
         trigger: '#highlights', // section trigger
         start: 'top 80%',
-        toggleActions: 'play none none none',
+        toggleActions: 'restart reverse restart reverse',
       },
       opacity: 1,
       y: -40,
@@ -36,14 +36,14 @@ const Highlights = () => {
       scrollTrigger: {
         trigger: '#highlights',
         start: 'top 80%',
-        toggleActions: 'play none none none',
+        toggleActions: 'restart reverse restart reverse',
       },
-      delay: 0.4,
+      delay: 0.45,
       opacity: 1,
-      y: -30,
+      y: -40,
       duration: 1.2,
       ease: "power5.inOut",
-      stagger: 0.2,
+      stagger: 0.15,
     });
   }, []);
   
@@ -56,21 +56,24 @@ const Highlights = () => {
       <div className="screen-max-width">
         <div className='mb-12 w-full md:flex items-end justify-between slow'>
           <h1 id="title" className='section-heading slow'>Get the highlights.</h1>
+
           <div className='flex flex-wrap items-end gap-5'>
             <p className='link'>
               Watch the film
               <img src={watchImg} alt="watch" className='ml-2' />
             </p>
+
             <p className='link'>
               Watch the event
               <img src={rightImg} alt="right" className='ml-2' />
             </p>
           </div>
         </div>
+
         <VideoCarousel />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Highlights
+export default Highlights;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -45,7 +46,8 @@ canvas {
 }
 
 @utility btn {
-  @apply px-6 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue;
+  @apply px-6 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent 
+  border border-transparent hover:border hover:text-blue hover:border-blue;
 }
 
 @utility color-container {
@@ -90,7 +92,8 @@ canvas {
 }
 
 @utility link {
-  @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20;
+  @apply text-blue hover:underline cursor-pointer flex items-center 
+  text-xl opacity-0 translate-y-20;
 }
 
 @utility control-btn {
@@ -132,4 +135,4 @@ canvas {
 @utility g_fadeIn {
   @apply opacity-0 translate-y-[100px];
 }
-/* */
+
