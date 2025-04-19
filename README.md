@@ -29,7 +29,7 @@ This is a clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS.
 
 👉 **Completely Responsive :** Consistent access and optimal viewing on any device with a fully responsive design that adapts to different screen sizes.
 
-👉 **Neat & Clean Code :** Maintained well structure folder with good naming, including code architecture and reusability.
+👉 **Neat & Clean Code :** Maintained well folder structure with good naming, including code architecture and reusability.
 
 ## <a name="quick-start"> 🚀 Quick Start</a>
 
