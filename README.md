@@ -2,7 +2,7 @@
 
 ## <a name="preview">🔍 Preview</a>
 
-- Deployed App Link - [View](https://iphone15-pr0.netlify.app)
+- Deployed App Link - [View](https://iphone-15-pr0.netlify.app)
 - Git Repository Link - [View](https://github.com/SAIMANIKESH/apple-website)
 
 ## <a name="introduction">🤖 Introduction</a>
