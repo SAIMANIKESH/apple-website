@@ -49,7 +49,7 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
-## <a name="links">🔗 Links</a>
+## <a name="assets">🗃️ Assets</a>
 
 Public Assets used in this project can be found [here.](https://drive.google.com/file/d/1syHiNxSIGXVApaIozdrLXM2x5dPhvaJL/view?usp=sharing)
 
