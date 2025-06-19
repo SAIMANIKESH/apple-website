@@ -2,6 +2,8 @@ import React from 'react';
 import { footerLinks } from '../constants';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className='py-5 sm:px-10 px-5'>
       <div className='screen-max-width'>
@@ -22,7 +24,7 @@ const Footer = () => {
 
         <div className='flex md:flex-row flex-col justify-between'>
           <div className='flex flex-col lg:flex-row'>
-            <p className='font-semibold text-gray text-xs cursor-text'>Copyright © 2025 Apple Inc. All rights reserved.</p>
+            <p className='font-semibold text-gray text-xs cursor-text'>Copyright © {year} Apple Inc. All rights reserved.</p>
 
             <div className='flex my-1 lg:my-0 lg:ml-[2.55vw] flex-wrap'>
               {footerLinks.map((link, i) => (
